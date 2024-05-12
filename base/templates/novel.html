@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<html>
+    <body>
+        <h1> {{novel.title}} </h1>
+        <h3> {{novel.author.name}} </h3>
+        <h5> Description: {{novel.description}} </h5>
+    </body>
+</html>
+
+{% endblock %}

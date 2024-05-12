@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<html>
+    <body>
+        <h1> Data List </h1>
+
+        <div>
+
+            {% for n in novel %} 
+            <div>
+
+                <h5> 
+                    <a href="/novel/{{n.id}}">
+                        Name: {{n.title}} 
+                    </a>
+                    
+                </h5> 
+            
+            {% endfor %}
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
+
+{% endblock %}
